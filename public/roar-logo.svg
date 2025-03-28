@@ -1,0 +1,6 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 8H28V32H20V8Z" fill="white"/>
+  <path d="M0 8H8V32H0V8Z" fill="white"/>
+  <path d="M10 8H18V32H10V8Z" fill="white"/>
+  <text x="40" y="28" fill="white" font-family="Arial" font-size="24" font-weight="bold">media</text>
+</svg>
