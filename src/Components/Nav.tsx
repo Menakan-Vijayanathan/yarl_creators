@@ -67,8 +67,8 @@ const Nav = () => {
           {/* Hero Section */}
           <div className="md:flex items-center pt-16 pb-20 max-w-screen-xl mx-auto">
             <div className="w-full md:w-1/2 order-2 md:order-1 flex flex-col justify-center">
-              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-                <span className="text-[#FFE600]">Breakthrough</span> Content:
+              <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                <span className="text-[#fdee36] font-extrabold">Breakthrough Content:</span>
                 <span className="block mt-2">Tailored for Every</span>
                 <span className="block">Platform</span>
               </h1>
@@ -91,22 +91,33 @@ const Nav = () => {
             </div>
           </div>
 
-          {/* Platforms Section */}
-          <div className="w-full bg-[#0F1115] py-6 overflow-hidden">
-            <div className="text-sm text-gray-400 px-8 md:px-16 mb-4">PLATFORMS WE EXCEL IN</div>
-            <div className="relative">
-              <div className="flex space-x-16 animate-scroll">
-                {[...platforms, ...platforms].map((platform, index) => (
-                  <img
-                    key={`${platform.name}-${index}`}
-                    src={platform.logo}
-                    alt={platform.name}
-                    className="h-8 opacity-50 hover:opacity-100 transition-opacity"
-                  />
-                ))}
-              </div>
-            </div>
+{/* Platforms Section */}
+<div className="w-full bg-[#0F1115] py-6 overflow-hidden">
+  <div className="text-sm text-gray-400 px-8 md:px-16 mb-4">PLATFORMS WE EXCEL IN</div>
+  <div className="relative">
+    <div className="flex space-x-16 animate-scroll-horizontal">
+      {[...platforms, ...platforms].map((platform, index) => (
+        <div
+          key={`${platform.name}-${index}`}
+          className="flex items-center cursor-pointer transition-all group"
+        >
+          {/* <img
+            src={platform.logo}
+            alt={platform.name}
+            className=" h-6 opacity-50 group-hover:opacity-100 transition-opacity"
+          /> */}
+          <div className="text-gray-700 text-3xl ml-2 group-hover:text-white transition-colors">
+            {platform.name}
           </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
+
+
         </div>
       </div>
     </div>

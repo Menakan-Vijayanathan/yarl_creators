@@ -14,3 +14,65 @@
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
+@font-face {
+  font-family: 'Cabinetgrotesk';
+  src: url('CabinetGrotesk-Bold.woff2') format('woff2');
+  font-weight: 100 900; /* Adjust based on available font weights */
+  font-display: swap;
+}
+
+
+
+* {
+  font-family: 'Cabinetgrotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll-horizontal {
+  animation: scrollHorizontal 30s linear infinite;
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+}
+
+.oblique-card {
+  transform: perspective(1000px) rotateY(5deg);
+  transition: transform 0.3s ease;
+}
+
+.oblique-card:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
