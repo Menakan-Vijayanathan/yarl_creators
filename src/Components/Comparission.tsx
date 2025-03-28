@@ -1,0 +1,82 @@
+import React from 'react';
+import { Check, X } from 'lucide-react';
+
+const comparisonData = [
+  { feature: "Platform-Specific Expertise", roarMedia: true, traditional: false, freelance: false },
+  { feature: "Dedicated Account Manager", roarMedia: true, traditional: true, freelance: false },
+  { feature: "24 Hour Turnarounds", roarMedia: true, traditional: false, freelance: false },
+  { feature: "Scalability (1 to 1,000 pieces)", roarMedia: true, traditional: false, freelance: false }
+];
+
+function Comparison() {
+  return (
+    <section className="p-16 bg-black">
+      <div className="max-w-4xl mx-auto relative overflow-hidden rounded-2xl bg-gray-800 p-10">
+        <h2 className="text-5xl text-white font-bold text-center mb-8">The Roar Difference</h2>
+
+        {/* Mobile View */}
+        <div className="block lg:hidden space-y-6">
+          {comparisonData.map((item, index) => (
+            <div key={index} className="bg-black rounded-xl overflow-hidden">
+              <div className="p-4 border-b border-gray-800">
+                <h3 className="text-lg font-medium text-white">
+                  {item.feature}
+                </h3>
+              </div>
+
+              <div className="space-y-2 p-2">
+                {/* Roar Media */}
+                <div className="flex items-center justify-between p-3 bg-black rounded-lg">
+                  <div className="flex items-center">
+                    <span className="text-yellow-400 font-semibold">roar</span>
+                    <span className="text-gray-400 ml-1">media</span>
+                  </div>
+                  {item.roarMedia && <Check className="text-yellow-400 w-5 h-5" />}
+                </div>
+
+                {/* Traditional Agency */}
+                <div className="flex items-center justify-between p-3 bg-black rounded-lg">
+                  <span className="text-gray-400">Traditional Agency</span>
+                  {item.traditional ? (
+                    <Check className="text-white w-5 h-5" />
+                  ) : (
+                    <X className="text-gray-500 w-5 h-5" />
+                  )}
+                </div>
+
+                {/* Freelance Platforms */}
+                <div className="flex items-center justify-between p-3 bg-black rounded-lg">
+                  <span className="text-gray-400">Freelance Platforms</span>
+                  {item.freelance ? (
+                    <Check className="text-white w-5 h-5" />
+                  ) : (
+                    <X className="text-gray-500 w-5 h-5" />
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop View */}
+        <div className="hidden lg:grid grid-cols-4 text-center p-6 border-b border-gray-700">
+          <div className="text-white">Here's How We Compare</div>
+          <div className="font-semibold text-white">Roar Media</div>
+          <div className="font-semibold text-white">Traditional Agency</div>
+          <div className="font-semibold text-white">Freelance Platforms</div>
+        </div>
+
+        {comparisonData.map((item, index) => (
+          <div key={index} className={`grid grid-cols-4 items-center p-6 ${index !== comparisonData.length - 1 ? 'border-b border-gray-700' : ''}`}>
+            <div className="text-gray-400">{item.feature}</div>
+            <div className="flex justify-center">{item.roarMedia ? <Check className="text-yellow-400 w-6 h-6" /> : <X className="text-gray-500 w-6 h-6" />}</div>
+            <div className="flex justify-center">{item.traditional ? <Check className="text-white w-6 h-6" /> : <X className="text-gray-500 w-6 h-6" />}</div>
+            <div className="flex justify-center">{item.freelance ? <Check className="text-white w-6 h-6" /> : <X className="text-gray-500 w-6 h-6" />}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Comparison;
