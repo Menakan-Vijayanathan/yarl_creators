@@ -20,9 +20,9 @@ const Nav = () => {
       {/* Background Image Section */}
       <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(banner1.png)' }}>
         <div className="relative z-10">
-          {/* Navigation Bar */}
+          {/* Fixed Navigation Bar */}
           <div className="px-8 py-2 md:px-12 lg:px-16">
-            <nav className="relative bg-[#0F1115] rounded-2xl px-6 py-5 md:px-8 max-w-screen-xl mx-auto">
+            <nav className="fixed top-0 left-0 right-0 bg-[#0F1115] rounded-b-2xl mt-3 px-6 py-5 md:px-8 max-w-screen-xl mx-auto z-10">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <img src="/roar-logo.svg" alt="Roar Media" className="h-8" />
@@ -65,7 +65,7 @@ const Nav = () => {
           </div>
 
           {/* Hero Section */}
-          <div className="md:flex items-center pt-16 pb-20 max-w-screen-xl mx-auto">
+          <div className="md:flex items-center pt-16 pb-20 max-w-screen-xl mx-auto mt-28">
             <div className="w-full md:w-1/2 order-2 md:order-1 flex flex-col justify-center">
               <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
                 <span className="text-[#fdee36] font-extrabold">Breakthrough Content:</span>
@@ -91,32 +91,29 @@ const Nav = () => {
             </div>
           </div>
 
-{/* Platforms Section */}
-<div className="w-full bg-[#0F1115] py-6 overflow-hidden">
-  <div className="text-sm text-gray-400 px-8 md:px-16 mb-4">PLATFORMS WE EXCEL IN</div>
-  <div className="relative">
-    <div className="flex space-x-16 animate-scroll-horizontal">
-      {[...platforms, ...platforms].map((platform, index) => (
-        <div
-          key={`${platform.name}-${index}`}
-          className="flex items-center cursor-pointer transition-all group"
-        >
-          {/* <img
-            src={platform.logo}
-            alt={platform.name}
-            className=" h-6 opacity-50 group-hover:opacity-100 transition-opacity"
-          /> */}
-          <div className="text-gray-700 text-3xl ml-2 group-hover:text-white transition-colors">
-            {platform.name}
+          {/* Platforms Section */}
+          <div className="w-full bg-[#0F1115] py-6 overflow-hidden">
+            <div className="text-sm text-gray-400 px-8 md:px-16 mb-4">PLATFORMS WE EXCEL IN</div>
+            <div className="relative">
+              <div className="flex space-x-16 animate-scroll-horizontal">
+                {[...platforms, ...platforms].map((platform, index) => (
+                  <div
+                    key={`${platform.name}-${index}`}
+                    className="flex items-center cursor-pointer transition-all group"
+                  >
+                    {/* <img
+                      src={platform.logo}
+                      alt={platform.name}
+                      className=" h-6 opacity-50 group-hover:opacity-100 transition-opacity"
+                    /> */}
+                    <div className="text-gray-700 text-3xl ml-2 group-hover:text-white transition-colors">
+                      {platform.name}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-
-
-
 
         </div>
       </div>

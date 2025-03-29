@@ -5,19 +5,22 @@ import Features from '../Components/Features';
 import ContentShowcase from '../Components/Contentshowcase';
 import Videos from '../Components/Videos';
 import Comparison from '../Components/Comparission';
+import Brand from '../Components/Brand';
+
 
 const HomePage: React.FC = () => {
-  return <div>
-
-    <Nav/>
-    <HeroStats/>
-    <Features/>
-    <ContentShowcase/>
-    <Videos/>
-    <Comparison/>
-
-
-  </div>;
+  return (
+    <div > {/* Add padding to prevent content overlap */}
+      <Nav />
+      
+      <HeroStats />
+      <Features />
+      <ContentShowcase />
+      <Videos />
+      <Comparison />
+      <Brand />
+    </div>
+  );
 };
 
 export default HomePage;

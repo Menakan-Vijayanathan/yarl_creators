@@ -21,7 +21,7 @@ const ContentShowcase = () => {
               <img
                 src="logo1.webp"
                 alt="Content example"
-                className="absolute top-0 left-0 w-full h-full object-cover -rotate-6 scale-110"
+                className="absolute top-0 left-0 w-full h-full object-cover -rotate-6 scale-x-125"
               />
             </div>
           </div>
