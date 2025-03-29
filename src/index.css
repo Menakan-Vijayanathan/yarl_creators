@@ -16,8 +16,36 @@
 }
 @font-face {
   font-family: 'Cabinetgrotesk';
+  src: url('CabinetGrotesk-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabinetgrotesk';
+  src: url('CabinetGrotesk-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabinetgrotesk';
+  src: url('CabinetGrotesk-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabinetgrotesk';
   src: url('CabinetGrotesk-Bold.woff2') format('woff2');
-  font-weight: 100 900; /* Adjust based on available font weights */
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabinetgrotesk';
+  src: url('CabinetGrotesk-Black.woff2') format('woff2');
+  font-weight: 900;
   font-display: swap;
 }
 

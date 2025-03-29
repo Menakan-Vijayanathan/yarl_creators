@@ -10,14 +10,14 @@ const comparisonData = [
 
 function Comparison() {
   return (
-    <section className="p-16 bg-black">
-      <div className="max-w-4xl mx-auto relative overflow-hidden rounded-2xl bg-gray-800 p-10">
+    <section className="p-24 bg-black">
+      <div className="max-w-7xl mx-auto relative overflow-hidden rounded-2xl bg-gray-800 p-10">
         <h2 className="text-5xl text-white font-bold text-center mb-8">The Roar Difference</h2>
 
         {/* ✅ Mobile View (ONLY visible on mobile) */}
-        <div className="block lg:hidden space-y-6">
+        <div className="block lg:hidden space-y-4">
           {comparisonData.map((item, index) => (
-            <div key={index} className="bg-black rounded-xl overflow-hidden">
+            <div key={index} className="bg-black rounded-xl overflow-hidden max-w-full px-4 sm:px-4">
               <div className="p-4 border-b border-gray-800">
                 <h3 className="text-lg font-medium text-white">{item.feature}</h3>
               </div>
