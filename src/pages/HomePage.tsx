@@ -7,6 +7,7 @@ import Videos from '../Components/Videos';
 import Comparison from '../Components/Comparission';
 import Brand from '../Components/Brand';
 import { Review } from '../Components/Review';
+import FAQ from '../Components/FAQ';
 
 
 const HomePage: React.FC = () => {
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
       <Comparison />
       <Brand />
       <Review/>
+      <FAQ/>
     </div>
   );
 };
