@@ -10,6 +10,8 @@ import { Review } from '../Components/Review';
 import FAQ from '../Components/FAQ';
 import Hero from '../Components/Herosection';
 import PlatformsSection from '../Components/Plateform';
+import FooterHero from '../Components/FooterHero';
+import Footer from '../Components/Footer';
 
 
 const HomePage: React.FC = () => {
@@ -26,6 +28,8 @@ const HomePage: React.FC = () => {
       <Brand />
       <Review/>
       <FAQ/>
+      <FooterHero/>
+      <Footer/>
     </div>
   );
 };
