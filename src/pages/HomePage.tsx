@@ -8,13 +8,16 @@ import Comparison from '../Components/Comparission';
 import Brand from '../Components/Brand';
 import { Review } from '../Components/Review';
 import FAQ from '../Components/FAQ';
+import Hero from '../Components/Herosection';
+import PlatformsSection from '../Components/Plateform';
 
 
 const HomePage: React.FC = () => {
   return (
     <div > {/* Add padding to prevent content overlap */}
       <Nav />
-      
+      <Hero/>
+      <PlatformsSection/>
       <HeroStats />
       <Features />
       <ContentShowcase />
