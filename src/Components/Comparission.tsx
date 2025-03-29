@@ -10,7 +10,7 @@ const comparisonData = [
 
 function Comparison() {
   return (
-    <section className="p-24 bg-black">
+    <section className="py-8 bg-black">
       <div className="max-w-7xl mx-auto relative overflow-hidden rounded-2xl bg-gray-800 p-10">
         <h2 className="text-5xl text-white font-bold text-center mb-8">The Roar Difference</h2>
 
