@@ -25,7 +25,7 @@ const Nav = () => {
             <nav className="fixed top-0 left-0 right-0 bg-[#0F1115] rounded-b-2xl mt-3 px-6 py-5 md:px-8 max-w-screen-xl mx-auto z-10">
               <div className="flex items-center justify-between">
                 <div className="flex items-center">
-                  <img src="/roar-logo.svg" alt="Roar Media" className="h-8" />
+                  <h5 className="h-8 text-white" >Yarl Creators</h5>
                 </div>
 
                 {/* Centered Links */}

@@ -6,6 +6,7 @@ import ContentShowcase from '../Components/Contentshowcase';
 import Videos from '../Components/Videos';
 import Comparison from '../Components/Comparission';
 import Brand from '../Components/Brand';
+import { Review } from '../Components/Review';
 
 
 const HomePage: React.FC = () => {
@@ -19,6 +20,7 @@ const HomePage: React.FC = () => {
       <Videos />
       <Comparison />
       <Brand />
+      <Review/>
     </div>
   );
 };
