@@ -3,13 +3,13 @@ import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="text-gray-400 py-16 bg-[#0A0A0F]">
+    <footer className="text-gray-400 pt-16 bg-[#0A0A0F]">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-24 gap-y-12 mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-x-24 gap-y-12 mb-24">
           {/* Logo, Description and Social Links - Takes 2 columns */}
-          <div className="lg:col-span-2">
-            <div className="text-white text-2xl font-bold mb-4">roar<span className="text-gray-400">media</span></div>
-            <div className="text-sm mb-3">a <span className="text-[#FFE81A]">roar</span>global company</div>
+          <div className="lg:col-span-4">
+          <img src='AgroPlus.png' className="w-60"/>
+            <div className="text-sm mb-3">a <span className="text-[#FFE81A]">Yarl</span>global company</div>
             <p className="text-sm text-gray-400/80 max-w-md mb-8">
               Roar Media is a top-tier content production studio for the platform age.
             </p>
@@ -62,14 +62,14 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-gray-800/40">
-          <div className="text-gray-400/60 mb-4 lg:mb-0">© 2025 Roar Media. All rights reserved</div>
-          <div className="flex space-x-12">
-            <a href="#" className="text-gray-400/60 hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400/60 hover:text-white transition-colors">Cookie Policy</a>
-          </div>
-        </div>
-      </div>
+        <div className="flex flex-col lg:flex-row justify-between items-center border-t border-gray-800/40 py-3">
+  <div className="text-gray-400/60 text-sm">© 2025 Roar Media. All rights reserved</div>
+  <div className="flex space-x-6">
+    <a href="#" className="text-gray-400/60 hover:text-white transition-colors text-sm">Privacy Policy</a>
+    <a href="#" className="text-gray-400/60 hover:text-white transition-colors text-sm">Cookie Policy</a>
+  </div>
+</div>
+</div>
     </footer>
   );
 };
