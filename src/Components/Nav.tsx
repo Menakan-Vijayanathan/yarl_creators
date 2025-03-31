@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 ${
-        isScrolled ? "bg-[#0F1115] shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-[#11100a] shadow-lg" : "bg-transparent"
       } transition-all duration-300 rounded-b-2xl mt-3 px-6 py-5 md:px-8 max-w-screen-xl mx-auto z-50`}
     >
       <div className="flex items-center justify-between">
@@ -30,13 +30,13 @@ const Navbar = () => {
 
         {/* Centered Links */}
         <div className="hidden md:flex items-center space-x-10 mx-auto">
-          <a href="#" className="text-gray-500 hover:text-[#FFE600] transition-colors text-base">
+          <a href="/about" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
             About
           </a>
-          <a href="#" className="text-gray-500 hover:text-[#FFE600] transition-colors text-base">
+          <a href="#" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
             Solutions
           </a>
-          <a href="#" className="text-gray-500 hover:text-[#FFE600] transition-colors text-base">
+          <a href="#" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
             Pricing
           </a>
         </div>
@@ -58,7 +58,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-[#0F1115] p-4 mt-2 rounded-2xl md:hidden max-w-screen-sm mx-auto">
           <div className="flex flex-col space-y-4">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">
+            <a href="/about" className="text-gray-300 hover:text-white transition-colors text-sm">
               About
             </a>
             <a href="#" className="text-gray-300 hover:text-white transition-colors text-sm">

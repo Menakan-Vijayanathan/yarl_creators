@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from '../Components/Nav';
+
 import HeroStats from '../Components/Firstsection';
 import Features from '../Components/Features';
 import ContentShowcase from '../Components/Contentshowcase';
@@ -17,7 +17,7 @@ import Footer from '../Components/Footer';
 const HomePage: React.FC = () => {
   return (
     <div > {/* Add padding to prevent content overlap */}
-      <Nav />
+
       <Hero/>
       <PlatformsSection/>
       <HeroStats />
