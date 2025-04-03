@@ -7,6 +7,7 @@ import Solution from './pages/Solution';
 import Login from './pages/Backends/Login';
 import Footer from './Components/Footer';
 import Pricing from './pages/Pricing';
+import FooterHero from './Components/FooterHero';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/solution" element={<Solution />} />
         <Route path="/pricing" element={<Pricing />} />
       </Routes>
+      <FooterHero/>
       <Footer/>
     </Router>
   );
