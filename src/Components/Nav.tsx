@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,18 +26,19 @@ const Navbar = () => {
       } transition-all duration-300 rounded-b-2xl mt-3 px-6 py-5 md:px-8 max-w-screen-xl mx-auto z-50`}
     >
       <div className="flex items-center justify-between">
-        {/* Logo */}
-        <img src="AgroPlus.png" className="w-60 z-50" />
+        {/* Logo */}<Link to='/'><img src="AgroPlus.png" className="w-60 z-50" />
+        </Link>
+        
 
         {/* Centered Links */}
         <div className="hidden md:flex items-center space-x-10 mx-auto">
           <a href="/about" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
             About
           </a>
-          <a href="#" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
+          <a href="/solution" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
             Solutions
           </a>
-          <a href="#" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
+          <a href="/pricing" className="text-gray-400 hover:text-[#FFE600] transition-colors text-base">
             Pricing
           </a>
         </div>
