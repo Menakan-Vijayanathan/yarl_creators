@@ -11,7 +11,7 @@ const Hero = () => {
         <img 
           src="/banner.webp" 
           alt="Banner" 
-          className="w-full object-contain max-w-md md:max-w-full transform -rotate-12 scale-110"
+          className="w-full object-contain max-w-md md:max-w-full transform -rotate-12 scale-125"
         />
       </div>
 

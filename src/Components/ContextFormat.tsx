@@ -73,7 +73,7 @@ const ContentFormats = () => {
   const [expandedCard, setExpandedCard] = useState<string>('');
 
   return (
-    <div className="relative min-h-screen bg-[#0A0A0A] text-white py-20 px-6 md:px-12 overflow-hidden">
+    <div className="relative min-h-screen bg-[#16181f] text-white py-20 px-6 md:px-12 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50" />
 

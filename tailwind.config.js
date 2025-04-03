@@ -5,7 +5,12 @@ export default {
     extend: {
       fontFamily:{
         regular:[]
-      }
+      },
+      colors: {
+        primary: '#fdee36',
+        secondary: '#424023',
+        background: '#16181f',
+      },
     },
   },
   plugins: [],
