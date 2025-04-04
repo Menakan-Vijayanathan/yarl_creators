@@ -11,7 +11,7 @@ const comparisonData = [
 function Comparison() {
   return (
     <section className="py-8 bg-black">
-      <div className="max-w-7xl mx-auto relative overflow-hidden rounded-2xl bg-gray-800 p-10">
+      <div className="max-w-7xl mx-auto relative overflow-hidden rounded-2xl bg-[#16181f] p-10">
         <h2 className="text-5xl text-white font-bold text-center mb-8">The Roar Difference</h2>
 
         {/* ✅ Mobile View (ONLY visible on mobile) */}
@@ -23,25 +23,37 @@ function Comparison() {
               </div>
 
               <div className="space-y-2 p-2">
-                {/* Roar Media */}
+                {/* Roar Media - Always black background */}
                 <div className="flex items-center justify-between p-3 bg-black rounded-lg">
                   <div className="flex items-center">
                     <span className="text-yellow-400 font-semibold">roar</span>
                     <span className="text-gray-400 ml-1">media</span>
                   </div>
-                  {item.roarMedia && <Check className="text-yellow-400 w-5 h-5" />}
+                  {item.roarMedia ? (
+                    <Check className="text-yellow-400 w-5 h-5" />
+                  ) : (
+                    <X className="text-gray-500 w-5 h-5" />
+                  )}
                 </div>
 
                 {/* Traditional Agency */}
-                <div className="flex items-center justify-between p-3 bg-black rounded-lg">
+                <div className="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
                   <span className="text-gray-400">Traditional Agency</span>
-                  {item.traditional ? <Check className="text-white w-5 h-5" /> : <X className="text-gray-500 w-5 h-5" />}
+                  {item.traditional ? (
+                    <Check className="text-white w-5 h-5" />
+                  ) : (
+                    <X className="text-gray-500 w-5 h-5" />
+                  )}
                 </div>
 
                 {/* Freelance Platforms */}
-                <div className="flex items-center justify-between p-3 bg-black rounded-lg">
+                <div className="flex items-center justify-between p-3 bg-gray-800 rounded-lg">
                   <span className="text-gray-400">Freelance Platforms</span>
-                  {item.freelance ? <Check className="text-white w-5 h-5" /> : <X className="text-gray-500 w-5 h-5" />}
+                  {item.freelance ? (
+                    <Check className="text-white w-5 h-5 " />
+                  ) : (
+                    <X className="text-gray-500 w-5 h-5" />
+                  )}
                 </div>
               </div>
             </div>
@@ -50,29 +62,45 @@ function Comparison() {
 
         {/* ✅ Desktop View (ONLY visible on large screens) */}
         <div className="hidden lg:block">
-          <div className="grid grid-cols-4 text-center p-6 border-b border-gray-700">
-            <div className="text-white">Here's How We Compare</div>
-            <div className="font-semibold text-white">Roar Media</div>
-            <div className="font-semibold text-white">Traditional Agency</div>
-            <div className="font-semibold text-white">Freelance Platforms</div>
+          <div className="grid grid-cols-4 text-center border-b border-gray-700">
+            <div className="text-white py-4">Here's How We Compare</div>
+            <div className="font-semibold text-white bg-black py-4">Roar Media</div>
+            <div className="font-semibold text-white py-4">Traditional Agency</div>
+            <div className="font-semibold text-white py-4">Freelance Platforms</div>
           </div>
 
           {comparisonData.map((item, index) => (
             <div
               key={index}
-              className={`grid grid-cols-4 items-center p-6 ${
-                index !== comparisonData.length - 1 ? "border-b border-gray-700" : ""
+              className={`grid grid-cols-4 items-center ${
+                index !== comparisonData.length ? "border-b border-gray-700" : ""
               }`}
             >
-              <div className="text-gray-400">{item.feature}</div>
-              <div className="flex justify-center">
-                {item.roarMedia ? <Check className="text-yellow-400 w-6 h-6" /> : <X className="text-gray-500 w-6 h-6" />}
+              <div className="text-gray-400 py-4">{item.feature}</div>
+
+              {/* Roar Media - Always black background */}
+              <div className="flex justify-center p-4 bg-black">
+                {item.roarMedia ? (
+                  <Check className="text-yellow-400 w-6 h-6" />
+                ) : (
+                  <X className="text-gray-500 w-6 h-6" />
+                )}
               </div>
-              <div className="flex justify-center">
-                {item.traditional ? <Check className="text-white w-6 h-6" /> : <X className="text-gray-500 w-6 h-6" />}
+
+              <div className="flex justify-center p-4 bg-[#16181f]">
+                {item.traditional ? (
+                  <Check className="text-white w-6 h-6" />
+                ) : (
+                  <X className="text-gray-500 w-6 h-6" />
+                )}
               </div>
-              <div className="flex justify-center">
-                {item.freelance ? <Check className="text-white w-6 h-6" /> : <X className="text-gray-500 w-6 h-6" />}
+
+              <div className="flex justify-center p-4 bg-[#16181f]">
+                {item.freelance ? (
+                  <Check className="text-white w-6 h-6" />
+                ) : (
+                  <X className="text-gray-500 w-6 h-6" />
+                )}
               </div>
             </div>
           ))}

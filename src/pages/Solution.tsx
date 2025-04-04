@@ -4,7 +4,7 @@ import ContentFormats from '../Components/ContextFormat'
 import { Hero4 } from '../Components/Hero4'
 import ViralCommerce from '../Components/ViralCommerce'
 import ViralContents from '../Components/ViralContents'
-import FooterHero from '../Components/FooterHero'
+
 
 const Solution = () => {
   return (
@@ -14,7 +14,7 @@ const Solution = () => {
       <Hero4/>
       <ViralCommerce/>
       <ViralContents/>
-      <FooterHero/>
+      
     </div>
   )
 }

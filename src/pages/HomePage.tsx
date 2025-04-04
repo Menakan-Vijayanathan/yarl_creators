@@ -6,11 +6,12 @@ import ContentShowcase from '../Components/Contentshowcase';
 import Videos from '../Components/Videos';
 import Comparison from '../Components/Comparission';
 import Brand from '../Components/Brand';
-import { Review } from '../Components/Review';
+
 import FAQ from '../Components/FAQ';
 import Hero from '../Components/Herosection';
 import PlatformsSection from '../Components/Plateform';
-import FooterHero from '../Components/FooterHero';
+import { Review } from '../Components/Review/Review';
+
 
 
 
@@ -27,9 +28,7 @@ const HomePage: React.FC = () => {
       <Comparison />
       <Brand />
       <Review/>
-      <FAQ/>
-      <FooterHero/>
-     
+      <FAQ/>     
     </div>
   );
 };

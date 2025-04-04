@@ -1,5 +1,6 @@
-import React from 'react';
-import { StarRating } from './StartRating';
+import React, { useState, useEffect } from 'react';
+import { StarRating } from './StarRating';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const testimonials = [
   {
@@ -45,36 +46,86 @@ const testimonials = [
 ];
 
 export function Review() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        (prevIndex + 1) % (testimonials.length - 2)
+      );
+    }, 5000); // Change slides every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? testimonials.length - 3 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => 
+      (prevIndex + 1) % (testimonials.length - 2)
+    );
+  };
+
+  const visibleTestimonials = [
+    testimonials[currentIndex],
+    testimonials[currentIndex + 1],
+    testimonials[currentIndex + 2],
+  ];
+
   return (
-    <div className="bg-black py-10 px-6 md:px-12 lg:px-24">
+    <div className="bg-black py-10 px-9 md:px-12 lg:px-28 overflow-hidden">
       <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white text-center mb-16">
         See What Our Clients Are Saying!
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {testimonials.map((testimonial, index) => (
-          <div
-            key={index}
-            className="bg-[#0F1115] rounded-3xl p-6 flex flex-col"
-          >
-            <div className="flex items-center mb-4 text-white">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <h3 className="font-semibold text-lg">{testimonial.name}</h3>
-                <p className="text-sm text-gray-400">{testimonial.role}</p>
-                <p className="text-sm text-gray-400">{testimonial.company}</p>
+      <div className="relative">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 transition-all duration-500 ease-in-out">
+          {visibleTestimonials.map((testimonial, index) => (
+            <div
+              key={`${currentIndex}-${index}`}
+              className={`bg-[#0F1115] rounded-3xl p-6 flex flex-col transform transition-all duration-500 hover:scale-105 ${
+                index !== 0 ? 'hidden lg:flex' : ''
+              }`}
+            >
+              <div className="flex items-center mb-4 text-white">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h3 className="font-semibold text-lg">{testimonial.name}</h3>
+                  <p className="text-sm text-gray-400">{testimonial.role}</p>
+                  <p className="text-sm text-gray-400">{testimonial.company}</p>
+                </div>
               </div>
+              <StarRating rating={testimonial.rating} />
+              <p className="mt-4 text-gray-300 leading-relaxed">
+                {testimonial.text}
+              </p>
             </div>
-            <StarRating rating={testimonial.rating} />
-            <p className="mt-4 text-gray-300 leading-relaxed">
-              {testimonial.text}
-            </p>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <button 
+          onClick={handlePrevious}
+          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-12 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-all duration-300"
+          aria-label="Previous testimonial"
+        >
+          <ChevronLeft className="w-6 h-6 text-white" />
+        </button>
+
+        <button 
+          onClick={handleNext}
+          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-12 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-all duration-300"
+          aria-label="Next testimonial"
+        >
+          <ChevronRight className="w-6 h-6 text-white" />
+        </button>
       </div>
     </div>
   );

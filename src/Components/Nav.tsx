@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 ${
-        isScrolled ? "bg-[#11100a] shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-[#11100a] shadow-lg" : " bg-[#11100a] shadow-lg"
       } transition-all duration-300 rounded-b-2xl mt-3 px-6 py-5 md:px-8 max-w-screen-xl mx-auto z-50`}
     >
       <div className="flex items-center justify-between">
@@ -63,10 +63,10 @@ const Navbar = () => {
             <a href="/about" className="text-gray-300 hover:text-white transition-colors text-sm">
               About
             </a>
-            <a href="solution" className="text-gray-300 hover:text-white transition-colors text-sm">
+            <a href="/solution" className="text-gray-300 hover:text-white transition-colors text-sm">
               Solutions
             </a>
-            <a href="pricing" className="text-gray-300 hover:text-white transition-colors text-sm">
+            <a href="/pricing" className="text-gray-300 hover:text-white transition-colors text-sm">
               Pricing
             </a>
             <button className="px-5 py-3 bg-[#FFE600] text-black font-medium rounded-full hover:bg-[#fff176] transition-colors text-sm">
