@@ -87,7 +87,7 @@ export function Review() {
           {visibleTestimonials.map((testimonial, index) => (
             <div
               key={`${currentIndex}-${index}`}
-              className={`bg-[#0F1115] rounded-3xl p-6 flex flex-col transform transition-all duration-500 hover:scale-105 ${
+              className={`bg-[#0F1115] rounded-3xl p-6 flex flex-col transform transition-all duration-500 hover:scale-105 h-[440px] overflow-hidden ${
                 index !== 0 ? 'hidden lg:flex' : ''
               }`}
             >
@@ -104,7 +104,7 @@ export function Review() {
                 </div>
               </div>
               <StarRating rating={testimonial.rating} />
-              <p className="mt-4 text-gray-300 leading-relaxed">
+              <p className="mt-4 text-gray-300 leading-relaxed overflow-y-auto">
                 {testimonial.text}
               </p>
             </div>

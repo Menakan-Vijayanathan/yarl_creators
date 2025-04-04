@@ -2,8 +2,11 @@ import React from "react";
 
 const FooterHero = () => {
   return (
-    <section className="relative bg-black flex justify-center items-center px-8 md:px-16 lg:px-24">
-      <div className="bg-[#fdee36] rounded-2xl p-14 w-11/12 max-w-7xl flex flex-col md:flex-row items-center justify-between shadow-lg">
+    <section className="relative flex justify-center items-center px-8 md:px-16 lg:px-24 bg-[#1C1F26]">
+      {/* Background Blending Effect */}
+      <div className="absolute top-1/2 left-0 w-full h-1/2 bg-black"></div>
+
+      <div className="relative bg-[#fdee36] rounded-2xl p-14 w-11/12 max-w-7xl flex flex-col md:flex-row items-center justify-between shadow-lg overflow-hidden">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Left Section - Text and Profile */}
           <div className="text-left text-black flex-1">
@@ -21,8 +24,12 @@ const FooterHero = () => {
           </div>
 
           {/* Right Section - Banner Image */}
-          <div className="hidden md:flex flex-1 justify-end">
-            <img src="/banner1.png" alt="Banner" className="w-full rounded-lg" />
+          <div className="hidden md:flex justify-end items-end flex-1">
+            <img
+              src="/network.png"
+              alt="Banner"
+              className="w-full max-w-xs rounded-lg" // Adjusted max-width
+            />
           </div>
         </div>
       </div>

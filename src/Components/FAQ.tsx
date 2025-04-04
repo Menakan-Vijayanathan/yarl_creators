@@ -57,10 +57,10 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1C1F26] text-white p-8">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold mb-12 text-center">Frequently Asked Questions</h1>
-        
+    <div className="min-h-screen bg-[#1C1F26] text-white px-4 lg:px-8 py-8">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-5xl font-bold mb-12 text-center">Frequently Asked Questions</h1>
+
         <div className="space-y-4">
           {faqData.map((faq, index) => (
             <div
@@ -71,14 +71,14 @@ const FAQ: React.FC = () => {
                 className="w-full py-6 px-6 flex justify-between items-center text-left hover:bg-gray-800/50 transition-colors duration-200"
                 onClick={() => toggleAccordion(index)}
               >
-                <span className="text-xl font-medium">{faq.question}</span>
+                <span className="text-2xl font-medium">{faq.question}</span>
                 <ChevronDown
                   className={`w-6 h-6 transition-transform duration-200 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 />
               </button>
-              
+
               <div
                 className={`overflow-hidden transition-all duration-300 ${
                   openIndex === index ? 'max-h-[1000px]' : 'max-h-0'

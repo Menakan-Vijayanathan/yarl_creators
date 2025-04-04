@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="text-gray-400 pt-16 bg-[#0A0A0F]">
+    <footer className="text-gray-400 pt-16 bg-black">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-x-24 gap-y-12 mb-24">
           {/* Logo, Description and Social Links - Takes 2 columns */}
