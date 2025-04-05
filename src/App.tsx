@@ -6,8 +6,9 @@ import Navbar from './Components/Nav';
 import Solution from './pages/Solution';
 import Login from './pages/Backends/Login';
 import Footer from './Components/Footer';
-import Pricing from './pages/Pricing';
+import Pricing from './pages/Backends/Pricing';
 import FooterHero from './Components/FooterHero';
+import PricingManager from './pages/Pricing';
 
 const App: React.FC = () => {
   return (
@@ -18,7 +19,8 @@ const App: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/solution" element={<Solution />} />
-        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/pricing" element={<PricingManager />} />
+        <Route path="/APricing" element={<Pricing />} />
       </Routes>
       <FooterHero/>
       <Footer/>
