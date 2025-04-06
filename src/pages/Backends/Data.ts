@@ -1,4 +1,4 @@
-import { Article, User } from './Types';
+import { Article, User } from './types';
 
 export const MOCK_USER: User = {
   username: 'admin',
