@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const ViralContent = () => (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white" id='viral-commerce'>
       <div className="">
         <div className="w-full  px-8 pb-0 ">
           <div className="max-w-7xl mx-auto border-y border-neutral-800 py-16">

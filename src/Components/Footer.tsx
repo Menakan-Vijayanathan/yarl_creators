@@ -38,7 +38,7 @@ const Footer = () => {
               <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
               <li><a href="/solution" className="hover:text-white transition-colors">Solutions</a></li>
               <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="contact" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
               <li><a href="#" className="flex items-center hover:text-white transition-colors">
                 Content Archive
                 <svg className="ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,10 +53,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-medium mb-6">Solutions</h3>
             <ul className="space-y-4">
-              <li><a href="#viral" className="hover:text-white transition-colors">Viral Exec</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Viral Commerce</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Viral Content</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Short Form Videos</a></li>
+              <li><a href="/solution#viral" className="hover:text-white transition-colors">Viral Exec</a></li>
+              <li><a href="/solution#viral-commerce" className="hover:text-white transition-colors">Viral Commerce</a></li>
+              <li><a href="/solution#viral-content" className="hover:text-white transition-colors">Viral Content</a></li>
+             {/*<li><a href="#" className="hover:text-white transition-colors">Short Form Videos</a></li>*/}
             </ul>
           </div>
         </div>

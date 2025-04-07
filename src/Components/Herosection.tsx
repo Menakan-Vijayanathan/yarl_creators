@@ -26,18 +26,19 @@ const Hero = () => {
           <span className="block mt-2">Tailored for Every Platform</span>
         </h2>
         <div className="mt-6">
-          <button  className="flex items-center space-x-3 px-6 py-4 bg-[#FFE600] text-black rounded-full 
-            hover:bg-[#fff176] transition-colors">
-              
-            <img
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt="Profile"
-              className="w-8 h-8 rounded-full"
-            />
-            <Link to='/contact'>
-            <span className="font-medium">Book a Call with Gazy</span>
-            </Link>
-          </button>
+
+
+<button className="bg-[#fdee36] text-black font-medium px-8 py-4 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_6px_#fdee36] -translate-y-2">
+  <Link to="/contact" className="flex items-center space-x-3">
+    <img
+      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt="Gazy"
+      className="w-10 h-10 rounded-full"
+    />
+    <span>Book a Call with Gazy</span>
+  </Link>
+</button>
+
           <p className="text-gray-400 mt-3 text-sm">Limited slots available.</p>
         </div>
       </div>

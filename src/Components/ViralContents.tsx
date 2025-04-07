@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ViralContents = () => (
-  <div className="min-h-screen bg-black text-white">
+  <div className="min-h-screen bg-black text-white" id='viral-content'>
     <div className="w-full px-8">
       <div className="max-w-7xl mx-auto ">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">

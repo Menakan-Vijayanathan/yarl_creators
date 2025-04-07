@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Youtube, Book as TiktokIcon, ShoppingBag } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface SocialLink {
   icon: React.ReactNode;
@@ -57,9 +58,22 @@ const Hero3: React.FC = () => {
 
         {/* CTA Button */}
         <div className="mt-6">
-          <button className="bg-[#fdee36] text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition duration-300">
-            Book a Call with Gazy
-          </button>
+        
+
+
+
+<button className="bg-[#fdee36] text-black font-medium px-8 py-4 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_6px_#fdee36] -translate-y-2">
+  <Link to="/contact" className="flex items-center space-x-3">
+    <img
+      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+      alt="Gazy"
+      className="w-10 h-10 rounded-full"
+    />
+    <span>Book a Call with Gazy</span>
+  </Link>
+</button>
+
+
         </div>
       </div>
     </div>

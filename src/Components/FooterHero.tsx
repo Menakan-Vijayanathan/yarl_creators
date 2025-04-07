@@ -16,7 +16,7 @@ const FooterHero = () => {
             </h1>
             <button className="mt-8 flex items-center space-x-3 bg-black text-white py-4 px-6 rounded-full">
               <img
-                src="/profile.jpg" // Replace with actual profile image
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" // Replace with actual profile image
                 alt="Gazy"
                 className="w-10 h-10 rounded-full"
               />

@@ -11,9 +11,15 @@ const Solution = () => {
     <div>
       <Hero3/>
       <ContentFormats/>
-      <Hero4/>
-      <ViralCommerce/>
-      <ViralContents/>
+      <div id='viral'>
+        <Hero4/>
+      </div>
+     <div id='viral-commerce'>
+        <ViralCommerce/>
+      </div>
+      <div id='viral-content'>
+        <ViralContents/>
+      </div>
       
     </div>
   )
