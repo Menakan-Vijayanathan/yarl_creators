@@ -9,11 +9,11 @@ interface SocialLink {
 }
 
 const socialLinks: SocialLink[] = [
-  { icon: <Facebook size={24} />, href: '#', label: 'Facebook' },
-  { icon: <Instagram size={24} />, href: '#', label: 'Instagram' },
-  { icon: <Linkedin size={24} />, href: '#', label: 'LinkedIn' },
-  { icon: <Youtube size={24} />, href: '#', label: 'YouTube' },
-  { icon: <TiktokIcon size={24} />, href: '#', label: 'TikTok' },
+  { icon: <Facebook size={24} />, href: 'https://www.facebook.com/', label: 'Facebook' },
+  { icon: <Instagram size={24} />, href: 'https://www.instagram.com/', label: 'Instagram' },
+  { icon: <Linkedin size={24} />, href: 'https://www.linkedin.com/', label: 'LinkedIn' },
+  { icon: <Youtube size={24} />, href: 'https://www.youtube.com/', label: 'YouTube' },
+  { icon: <TiktokIcon size={24} />, href: 'https://www.tiktok.com/', label: 'TikTok' },
   { icon: <ShoppingBag size={24} />, href: '#', label: 'Shop' },
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ViralContent = () => (
     <div className="min-h-screen bg-black text-white" id='viral-commerce'>
@@ -51,9 +52,11 @@ const ViralContent = () => (
                   We turn your static assets into dynamic motion ads for every platform 
                   and format, ensuring maximum impact and engagement.
                 </p>
-                <button className="bg-[#fdee36] text-black px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition-opacity">
-                  Book a Call
-                </button>
+                <Link to='/contact'>
+                  <button className="bg-[#fdee36] text-black px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition-opacity">
+                    Book a Call
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

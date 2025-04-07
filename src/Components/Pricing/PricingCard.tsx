@@ -1,5 +1,6 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface PricingFeature {
   name: string;
@@ -111,9 +112,11 @@ export function PricingCard({
 ))}</div>
 
 
+      <Link to='/contact'>
       <button className="w-full mt-8 bg-white text-black py-3 rounded-full hover:bg-gray-200 transition-colors">
         Get in Touch
       </button>
+      </Link>
     </div>
   );
 }

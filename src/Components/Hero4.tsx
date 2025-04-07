@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function Hero4() {
   return (
-    <div className="py-20 px-6 md:px-12 lg:px-24 overflow-hidden bg-black text-white relative" id>
+    <div className="py-20 px-6 md:px-12 lg:px-24 overflow-hidden bg-black text-white relative" >
       {/* Yellow glow effect only for this section */}
       <div className="absolute -top-32 -left-32 w-72 h-72 bg-[#fdee36] rounded-full blur-[128px] pointer-events-none opacity-40"></div>
       
@@ -37,10 +38,11 @@ export function Hero4() {
                 Instagram.
               </p>
             </div>
-
-            <button className="bg-[#fdee36] text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition duration-300 w-fit">
+            <Link to='/contact'>
+              <button className="bg-[#fdee36] text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-300 transition duration-300 w-fit">
               Book a Call
-            </button>
+              </button>
+            </Link>
           </div>
 
           {/* Right Column - Video */}

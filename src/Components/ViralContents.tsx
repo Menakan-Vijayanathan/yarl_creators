@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ViralContents = () => (
   <div className="min-h-screen bg-black text-white" id='viral-content'>
@@ -20,9 +21,11 @@ const ViralContents = () => (
               We crop, edit, and optimize your content to create platform-specific 
               pieces that command attention and drive results.
             </p>
-            <button className="bg-[#fdee36] text-black px-6 py-3 rounded-full font-semibold text-base hover:opacity-90 transition-opacity">
-              Book a Call
-            </button>
+            <Link to='/contact'>
+              <button className="bg-[#fdee36] text-black px-6 py-3 rounded-full font-semibold text-base hover:opacity-90 transition-opacity">
+                Book a Call
+              </button>
+            </Link>
           </div>
 
           {/* Video Section - Right side on desktop */}
