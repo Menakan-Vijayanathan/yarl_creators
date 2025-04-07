@@ -36,9 +36,12 @@ const ContentSection = () => {
             We have evolved from a media platform into a top-tier content production studio, bringing a decade of experience. Our team excels in best practices for every major platform and specializes in creating platform-specific content for global brands and agencies at scale, across diverse formats such as captivating social media graphics, dynamic Instagram Reels, and compelling animation explainers.
           </p>
 
-          <button className="bg-yellow-300 text-black font-semibold px-8 py-4 rounded-full text-lg hover:bg-yellow-400 transition-colors mt-8">
+          <a href="#meet-our-team">
+          <button className="bg-[#fdee36] text-black font-semibold px-8 py-4 rounded-full text-lg mt-8 transition-all duration-300 ease-in-out transform hover:bg-yellow-400 hover:scale-105 hover:shadow-[0_0_35px_12px_#fdee36] -translate-y-2">
             Meet the Team
           </button>
+        </a>
+
         </div>
       </div>
     </div>

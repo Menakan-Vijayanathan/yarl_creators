@@ -50,8 +50,8 @@ const Navbar = () => {
 
         {/* Get in Touch Button */}
         <div className="hidden md:flex ml-auto">
-          <button className="px-5 py-3 bg-[#FFE600] text-black font-medium rounded-full hover:bg-[#fff176] transition-colors text-sm">
-            Get in Touch
+          <button  className="px-5 py-3 bg-[#FFE600] text-black font-medium rounded-full hover:bg-[#fff176] transition-colors text-sm">
+            <Link to='/contact'>Get in Touch</Link>
           </button>
         </div>
       </div>

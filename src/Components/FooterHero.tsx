@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FooterHero = () => {
   return (
@@ -19,7 +20,9 @@ const FooterHero = () => {
                 alt="Gazy"
                 className="w-10 h-10 rounded-full"
               />
+              <Link to='/contact'>
               <span>Book a Call with Gazy</span>
+              </Link>
             </button>
           </div>
 

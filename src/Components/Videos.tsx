@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 type Tab = {
   id: string;
@@ -82,7 +83,7 @@ function Videos() {
         <div className="mt-8 text-center">
           <button 
             className="bg-[#fdee36] text-black px-8 py-5 rounded-full font-semibold hover:bg-[#fdee36] hover:shadow-[0_0_10px_#fdee36] p-4 transition-all duration-300">
-            Our Solutions
+            <Link to='/solution'>  Our Solutions</Link>
           </button>
         </div>
       </div>

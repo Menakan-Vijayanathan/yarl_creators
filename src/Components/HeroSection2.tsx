@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroContentSection = () => {
   return (
@@ -11,9 +12,13 @@ const HeroContentSection = () => {
         <h1 className="text-6xl md:text-7xl font-bold mb-8 leading-tight">
           We're a <span className="text-yellow-300">top-tier</span> content production studio for the platform age
         </h1>
-        <button className="bg-yellow-300 text-black font-semibold px-8 py-4 rounded-full text-lg hover:bg-yellow-400 transition-colors">
-          Our Solutions
+        <button className="bg-[#fdee36] text-black font-medium px-8 py-4 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_6px_#fdee36] -translate-y-2">
+          <Link to="/solution">Our Solutions</Link>
         </button>
+
+
+
+
       </div>
 
       {/* Full-Width Image */}
@@ -29,9 +34,11 @@ const HeroContentSection = () => {
         <p className="text-lg text-gray-300 mb-6">
           We have evolved from a media platform into a top-tier content production studio, bringing a decade of experience. Our team excels in best practices for every major platform and specializes in creating platform-specific content for global brands and agencies at scale, across diverse formats such as captivating social media graphics, dynamic Instagram Reels, and compelling animation explainers.
         </p>
-        <button className="bg-yellow-300 text-black font-semibold px-8 py-4 rounded-full text-lg hover:bg-yellow-400 transition-colors">
-          Meet the Team
+        <a href='#meet-our-team'>
+        <button className="bg-[#fdee36] text-black font-medium px-8 py-4 rounded-full text-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-[0_0_15px_6px_#fdee36] -translate-y-2">
+          Meet Our Team
         </button>
+        </a>
       </div>
     </div>
   );

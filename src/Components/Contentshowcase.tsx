@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Youtube, BookIcon as TiktokIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ContentShowcase = () => {
   return (
@@ -35,7 +36,9 @@ const ContentShowcase = () => {
               alt="Profile"
               className="w-8 h-8 rounded-full"
             />
-            Book a Call with Gazy
+            <Link to='/contact'>
+              Book a Call with Gazy
+            </Link>
           </button>
         </div>
 

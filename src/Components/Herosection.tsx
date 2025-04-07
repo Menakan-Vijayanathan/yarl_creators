@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -25,14 +26,17 @@ const Hero = () => {
           <span className="block mt-2">Tailored for Every Platform</span>
         </h2>
         <div className="mt-6">
-          <button className="flex items-center space-x-3 px-6 py-4 bg-[#FFE600] text-black rounded-full 
+          <button  className="flex items-center space-x-3 px-6 py-4 bg-[#FFE600] text-black rounded-full 
             hover:bg-[#fff176] transition-colors">
+              
             <img
               src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt="Profile"
               className="w-8 h-8 rounded-full"
             />
+            <Link to='/contact'>
             <span className="font-medium">Book a Call with Gazy</span>
+            </Link>
           </button>
           <p className="text-gray-400 mt-3 text-sm">Limited slots available.</p>
         </div>

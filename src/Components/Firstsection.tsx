@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface StatItemProps {
   number: string;
@@ -15,7 +16,7 @@ const Hero: React.FC = () => {
               We&apos;re a top-tier content production studio for the platform age
             </h1>
             <button className="bg-yellow-300 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition-colors">
-              Learn More
+              <Link to='/about'>Learn More</Link>
             </button>
           </div>
           <div className="space-y-6">

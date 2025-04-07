@@ -16,16 +16,16 @@ const Footer = () => {
             
             {/* Social Links */}
             <div className="flex space-x-6">
-              <a href="#" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
+              <a href="https://www.facebook.com/" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
+              <a href="https://www.instagram.com/" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
+              <a href="https://www.linkedin.com/" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
+              <a href="https://www.youtube.com/" className="bg-gray-800/40 p-3 rounded-lg hover:bg-gray-800 transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
@@ -35,10 +35,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-medium mb-6">Quick Links</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Solutions</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
+              <li><a href="/solution" className="hover:text-white transition-colors">Solutions</a></li>
+              <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="contact" className="hover:text-white transition-colors">Contact</a></li>
               <li><a href="#" className="flex items-center hover:text-white transition-colors">
                 Content Archive
                 <svg className="ml-1 w-3 h-3" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-medium mb-6">Solutions</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="hover:text-white transition-colors">Viral Exec</a></li>
+              <li><a href="#viral" className="hover:text-white transition-colors">Viral Exec</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Viral Commerce</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Viral Content</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Short Form Videos</a></li>
